@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Forum.Db.Sql\Forum.Db.Sql.csproj" />
+      <ProjectReference Include="..\Forum.Domain\Forum.Domain.csproj" />
+      <ProjectReference Include="..\Forum.Logic\Forum.Logic.csproj" />
+      <ProjectReference Include="..\Forum.MVC\Forum.MVC.csproj" />
+      <ProjectReference Include="..\Forum.Services\Forum.Services.csproj" />
+      <ProjectReference Include="..\Forum.Test.Sql\Forum.Test.Sql.csproj" />
+      <ProjectReference Include="..\Forum.Test\Forum.Test.csproj" />
+    </ItemGroup>
+
+</Project>
