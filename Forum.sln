@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Test.Sql", "Forum.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Console", "Forum.Console\Forum.Console.csproj", "{55A7159B-AE5D-4AEB-B9AA-EB2C27B69D6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.AutofacDI", "Forum.AutofacDI\Forum.AutofacDI.csproj", "{0953D9CD-1B96-4BFA-AEBA-96C00F3EB75D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{55A7159B-AE5D-4AEB-B9AA-EB2C27B69D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A7159B-AE5D-4AEB-B9AA-EB2C27B69D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55A7159B-AE5D-4AEB-B9AA-EB2C27B69D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0953D9CD-1B96-4BFA-AEBA-96C00F3EB75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0953D9CD-1B96-4BFA-AEBA-96C00F3EB75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0953D9CD-1B96-4BFA-AEBA-96C00F3EB75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0953D9CD-1B96-4BFA-AEBA-96C00F3EB75D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

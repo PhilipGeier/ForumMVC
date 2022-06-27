@@ -8,15 +8,15 @@ public class SqlPostRepository : IPostRepository
     private const string CollectionName = "posts";
     private readonly List<Post> _collection;
 
-    public SqlPostRepository(SqlDbFactory<Post> factory)
+    public SqlPostRepository(SqlCollectionGetter<Post> collectionGetter)
     {
-        _collection = factory.GetCollection(CollectionName).ToList();
+        _collection = collectionGetter.GetCollection(CollectionName).ToList();
     }
     
     public Post GetById(Guid id)
     {
         return _collection
-            .Find(a => a.Id == id)!;
+            .Find(a => a.Id == id);
     }
 
     public void Add(Post post)

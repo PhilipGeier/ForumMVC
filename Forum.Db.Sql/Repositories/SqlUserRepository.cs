@@ -8,9 +8,9 @@ public class SqlUserRepository : IUserRepository
     private const string CollectionName = "users";
     private readonly List<User> _collection;
     
-    public SqlUserRepository(SqlDbFactory<User> factory)
+    public SqlUserRepository(SqlCollectionGetter<User> collectionGetter)
     {
-        _collection = factory.GetCollection(CollectionName).ToList();
+        _collection = collectionGetter.GetCollection(CollectionName).ToList();
     }
     
     public User GetById(Guid id)
@@ -35,8 +35,8 @@ public class SqlUserRepository : IUserRepository
     {
         var oldUser = _collection.Find(a => a.Id == user.Id);
 
-        if (oldUser != null)
-        {
+        if (oldUser != null && oldUser.Id == user.Id)
+        {   
             _collection.Remove(oldUser);
             _collection.Add(user);
         }
@@ -48,6 +48,7 @@ public class SqlUserRepository : IUserRepository
         
         if (userToRemove != null)
             _collection.Remove(userToRemove);
+        
     }
 
     public IEnumerable<User> GetAll()

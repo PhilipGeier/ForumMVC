@@ -1,4 +1,6 @@
-﻿namespace Forum.Domain.DbObjects;
+﻿using Forum.Domain.Enums;
+
+namespace Forum.Domain.DbObjects;
 
 public record Post
 {
@@ -7,4 +9,5 @@ public record Post
     public string Content { get; init; }
     public DateTime PostDate { get; init; }
     public Guid Author { get; init; }
+    public PostTag Tag { get; init; }
 }

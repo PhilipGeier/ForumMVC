@@ -7,8 +7,8 @@ public class InMemUserRepository : IUserRepository
 {
     private List<User> _users = new();
 
-    public User GetById(Guid id) => 
-        _users.FirstOrDefault(a => a.Id == id)!;
+    public User GetById(Guid id)
+        => _users.FirstOrDefault(a => a.Id == id)!;
 
     public User GetByEmail(string email)
         => _users.FirstOrDefault(a => a.Email.Equals(email))!;

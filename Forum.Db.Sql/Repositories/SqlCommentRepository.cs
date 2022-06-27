@@ -8,11 +8,17 @@ public class SqlCommentRepository : ICommentRepository
     private const string CollectionName = "comments";
     private readonly List<Comment> _collection;
 
-    public SqlCommentRepository(SqlDbFactory<Comment> factory)
+    public SqlCommentRepository(SqlCollectionGetter<Comment> collectionGetter)
     {
-        _collection = factory.GetCollection(CollectionName).ToList();
+        _collection = collectionGetter.GetCollection(CollectionName).ToList();
     }
-    
+
+    public Comment GetById(Guid id)
+    {
+        return _collection
+            .Find(a => a.Id == id)!;
+    }
+
     public void Add(Comment comment)
     {
         _collection.Add(comment);

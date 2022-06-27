@@ -1,10 +1,9 @@
 ﻿using Autofac;
-using Autofac.Core;
 using Forum.Db.Sql;
 using Forum.Logic;
 using Forum.Services;
 
-namespace AutofacDI;
+namespace Forum.AutofacDI;
 
 public class AutofacModule : Module
 {
@@ -12,14 +11,11 @@ public class AutofacModule : Module
     {
         base.Load(builder);
         builder.RegisterType<BasicUserService>().As<IUserService>();
+        builder.RegisterType<BasicPostService>().As<IPostService>();
 
-
-        builder.RegisterType<SqlDbFactory<>>();
+        builder.RegisterType<ImplSqlDbFactory>().As<ISqlDbFactory>();
         
-#if DEBUG
+
         builder.RegisterType<DevDatabaseService>().As<IDatabaseService>();
-#else
-        builder.RegisterType<AppSettingsDatabaseService>().As<IDatabaseService>();
-#endif
     }
 }
