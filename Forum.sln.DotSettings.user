@@ -6,5 +6,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;MSTest::FF5A0B5C-4F33-4D5C-9749-75BF2D314FF3::net6.0::Forum.Test.BasicUserTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::FF5A0B5C-4F33-4D5C-9749-75BF2D314FF3::net6.0::Forum.Test.BasicPostTest.TestGetById&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::53194C2F-52F0-4647-B3FE-3759535CCDC8::net6.0::Forum.Test.Sql.BasicUserTest.TestAddUser&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -5,7 +5,12 @@
       "ProjectGuid": "ff5a0b5c-4f33-4d5c-9749-75bf2d314ff3",
       "DisplayName": "Forum.Test",
       "ColorIndex": 0
+    },
+    "0d4c37ae-89fe-41d8-95d3-c47863db71ac": {
+      "ProjectGuid": "0d4c37ae-89fe-41d8-95d3-c47863db71ac",
+      "DisplayName": "Forum.Db.Sql",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

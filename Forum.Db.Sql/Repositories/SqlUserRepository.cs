@@ -1,5 +1,6 @@
 ﻿using Forum.Domain.DbObjects;
 using Forum.Services;
+using MySql.Data.EntityFramework;
 
 namespace Forum.Db.Sql.Repositories;
 

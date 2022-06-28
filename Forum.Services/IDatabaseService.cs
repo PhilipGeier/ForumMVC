@@ -1,6 +1,6 @@
 ﻿namespace Forum.Services;
 
-public interface IDatabaseService
+public  interface IDatabaseService
 {
     string GetConnectionString();
 }
